@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #F4F4F4;
+    --black: #232323;
+
+    --lightgray: #ABA8A8;
+    --darkGray: #353434;
+
+    --borderColor:#B9B9B9;
+
+}
+@font-face {
+    font-family: 'orsay';
+    src: url(assets/fonts/orsay.otf);
+}
+body{
+    font-family: sans-serif;
+}

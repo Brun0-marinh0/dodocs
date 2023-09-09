@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-nav.component.scss']
 })
 export class MainNavComponent {
-
+  routers: Array<String> = [
+    'Sobre',
+    'Finalizados',
+    'Criar',
+    'Andamento'
+  ]
 }

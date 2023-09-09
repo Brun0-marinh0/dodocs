@@ -18,6 +18,15 @@
     font-family: 'orsay';
     src: url(assets/fonts/orsay.otf);
 }
+
+@font-face {
+    font-family: 'Roobert';
+    src: url(assets/fonts/Roobert-Regular.ttf);
+}
+@font-face {
+    font-family: 'RoxboroughCF';
+    src: url(assets/fonts/roxborough-cf-regular.ttf);
+}
 body{
-    font-family: sans-serif;
+    font-family: 'Roobert';
 }

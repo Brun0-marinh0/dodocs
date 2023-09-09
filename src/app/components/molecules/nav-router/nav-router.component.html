@@ -1,0 +1,10 @@
+<span> 0{{n}} </span>
+<div class="word">
+    <div
+        *ngFor="let letter of getTesteArray(); let i = index"
+        class="letter" [style.transition-delay]="i * 0.02 + 's'"
+    >
+        <p> {{letter}} </p>
+        <p> {{letter}} </p>
+    </div>
+</div>

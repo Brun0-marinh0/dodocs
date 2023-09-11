@@ -1,6 +1,6 @@
 <section>
     <span> 0{{n}} </span>
-    <div class="word">
+    <div class="word" [ngClass]="{'color': color}">
         <div
             *ngFor="let letter of getTesteArray(); let i = index"
             class="letter" [style.transition-delay]="i * 0.02 + 's'"
@@ -9,5 +9,5 @@
             <p> {{letter}} </p>
         </div>
     </div>
+    {{color}}
 </section>
-

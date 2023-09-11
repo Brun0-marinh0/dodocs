@@ -13,11 +13,17 @@ export class MainNavComponent {
     'Andamento'
   ]
   selected: String = ''
+  show: Boolean = false
 
   showOption(router:String) {
    this.selected = router
+   this.show = true
   }
   out(){
     this.selected = ''
+  }
+  close(){
+    console.log('oi')
+    this.show = false
   }
 }

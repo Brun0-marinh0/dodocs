@@ -12,4 +12,12 @@ export class MainNavComponent {
     'Criar',
     'Andamento'
   ]
+  selected: String = ''
+
+  showOption(router:String) {
+   this.selected = router
+  }
+  out(){
+    this.selected = ''
+  }
 }

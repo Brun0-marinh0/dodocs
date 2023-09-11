@@ -2,14 +2,20 @@ span{
     color: var(--lightgray);
     font-size: 0.7rem;
 }
+.color{
+    color: blue;
+}
+.word{
+    display: flex;
+    height: 0.9rem;
+    width: fit-content;
+    overflow: hidden;
+    color: red;
+
+    transition: .2s;
+}
 section{
     cursor: pointer;
-    .word{
-        display: flex;
-        height: 0.9rem;
-        width: fit-content;
-        overflow: hidden;
-    }
     .letter{
         position: relative;
         bottom: 0rem;
@@ -25,6 +31,7 @@ section{
     }
         &:hover{
             .letter{
+                
                 position: relative;
                 bottom: 0.9rem;
             }

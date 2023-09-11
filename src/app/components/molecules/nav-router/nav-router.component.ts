@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class NavRouterComponent {
   @Input() word : string = ''
   @Input() n : number = 0
+  @Input() color : any = false
 
    getTesteArray(): string[] {
     return this.word.split('');

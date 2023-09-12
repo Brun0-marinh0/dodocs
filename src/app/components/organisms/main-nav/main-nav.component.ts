@@ -14,16 +14,18 @@ export class MainNavComponent {
   ]
   selected: String = ''
   show: Boolean = false
+  animationText: Boolean = false
 
   showOption(router:String) {
    this.selected = router
+   this.animationText = true
    this.show = true
   }
   out(){
-    this.selected = ''
+    this.animationText = false
   }
   close(){
-    console.log('oi')
+    
     this.show = false
   }
 }

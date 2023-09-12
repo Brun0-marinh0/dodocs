@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ShowRouterSelectedComponent {
   @Input() selected : string = ''
+  @Input() showAnimation : Boolean = false
 }

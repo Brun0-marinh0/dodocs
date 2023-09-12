@@ -1,3 +1,7 @@
 <div class="container">
-    <p> {{selected}} </p>
+    <div class="option">
+        <div class="letterHover" [ngClass]="{'showText': showAnimation}">
+            <p> {{selected}} </p>
+        </div>
+    </div>
 </div>

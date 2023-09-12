@@ -8,9 +8,9 @@ import { Component, Input } from '@angular/core';
 export class NavRouterComponent {
   @Input() word : string = ''
   @Input() n : number = 0
-  @Input() color : any = false
+  @Input() color : Boolean = false
 
-   getTesteArray(): string[] {
+  getTesteArray(): string[] {
     return this.word.split('');
   }
 }

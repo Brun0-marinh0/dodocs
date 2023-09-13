@@ -8,6 +8,7 @@ import { NavRouterComponent } from './components/molecules/nav-router/nav-router
 import { ShowRouterSelectedComponent } from './components/molecules/show-router-selected/show-router-selected.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { HomeTemplateComponent } from './components/templates/home-template/home-template.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeTemplateComponent } from './components/templates/home-template/home
     NavRouterComponent,
     ShowRouterSelectedComponent,
     HomeComponent,
-    HomeTemplateComponent
+    HomeTemplateComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

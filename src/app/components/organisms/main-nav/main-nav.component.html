@@ -1,7 +1,16 @@
 <header>
         <div class="listRouter negativeSpace">
-            <app-nav-router *ngFor="let router of routers; let numb = index" word="{{router}}" [color]="show"   [n]="numb+1" (mouseover)="showOption(router)" (mouseout)="out()"/>
+            <app-nav-router 
+                *ngFor="let router of routers; let numb = index"
+                word="{{router.name}}" [color]="show" [n]="numb+1"
+                (mouseover)="showOption(router.name)" (mouseout)="out()"
+                (click)="openLink(router.link)"
+            />
             <span [ngClass]="{'color': show}">2023</span>
         </div>
-        <app-show-router-selected class="selected" [ngClass]="{'show': show}"  selected="{{selected}}" [showAnimation]="animationText" (mouseout)="close()"/>
+        <app-show-router-selected [style.top.rem] ="topStyle" class="selected" 
+            [ngClass]="{'show': show}" [ngClass]="{'openFrame': open}"
+            selected="{{selected}}" [showAnimation]="animationText" 
+            (mouseout)="close()"
+        />
 </header>

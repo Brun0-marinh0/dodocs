@@ -4,10 +4,8 @@
         width: fit-content;
         overflow: hidden;
         .letterHover{
-            position: relative;
             opacity: 0;
             transition: opacity .5s ease-out;
-
             p{
                 color: #575757;
                 font-family: 'Orsay';

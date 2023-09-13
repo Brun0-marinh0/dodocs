@@ -4,6 +4,7 @@ header{
     height: 100vh;
     align-items: center;
     display: flex;
+    top: 0;
     .listRouter{
         width: 100%;
         display: flex;
@@ -32,5 +33,8 @@ header{
         color: var(--white);
         display: grid;
         place-items: center;
+    }
+    .openFrame{
+        height: 100vh;
     }
 }

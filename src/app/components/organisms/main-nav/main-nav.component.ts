@@ -42,6 +42,8 @@ export class MainNavComponent {
   openLink(link: string){
     this.open = true
     this.topStyle = 0
-    // this.routerLink.navigate([link])
+    setTimeout(() => {
+      this.routerLink.navigate([link])
+    }, 500);
   }
 }

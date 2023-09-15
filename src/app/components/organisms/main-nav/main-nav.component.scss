@@ -36,7 +36,7 @@ header{
     }
     .openFrame{
         height: 100vh;
-        cursor: url('../../../../assets/image/loading.png')!important;
+        cursor: url('../../../../assets/image/loading.png') 20 20 ,auto;
         
     }
 }

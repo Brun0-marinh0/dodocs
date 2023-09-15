@@ -23,14 +23,16 @@ export class MainNavComponent {
   animationText: Boolean = false
   open: Boolean = false
   topStyle : number = 0.7
+
   showOption(router: string) {
-   
    this.selected = router
    this.animationText = true
    this.show = true
   }
   out(){
-    this.animationText = false
+    if(!this.open){
+      this.animationText = false
+    }
   }
   close(){
     if(!this.open){

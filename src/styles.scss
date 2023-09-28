@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #F4F4F4;
+    --black: #232323;
+
+    --lightgray: #ABA8A8;
+    --darkGray: #353434;
+
+    --borderColor:#B9B9B9;
+
+}
+@font-face {
+    font-family: 'orsay';
+    src: url(assets/fonts/orsay.otf);
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url(assets/fonts/Roobert-Regular.ttf);
+}
+@font-face {
+    font-family: 'RoxboroughCF';
+    src: url(assets/fonts/roxborough-cf-regular.ttf);
+}
+body{
+    font-family: 'Roobert';
+}
+
+.negativeSpace{
+    padding: 0 4vw;
+}
+
+.color{
+    color: var(--white);
+}

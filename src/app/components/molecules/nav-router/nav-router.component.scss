@@ -1,0 +1,35 @@
+span{
+    color: var(--lightgray);
+    font-size: 0.7rem;
+}
+
+.word{
+    display: flex;
+    height: 0.9rem;
+    width: fit-content;
+    overflow: hidden;
+}
+section{
+    cursor: pointer;
+    
+    .letter{
+        position: relative;
+        bottom: 0rem;
+        transition: bottom .2s ease-out;
+        p{
+            margin: 0;
+            padding: 0;
+            line-height: 0.9;
+        }
+        p:nth-child(2){
+            font-family: 'RoxboroughCF';
+        }
+    }
+        &:hover{
+            .letter{
+                
+                position: relative;
+                bottom: 0.9rem;
+            }
+        }
+}

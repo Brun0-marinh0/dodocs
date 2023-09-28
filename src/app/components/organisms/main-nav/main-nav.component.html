@@ -1,0 +1,18 @@
+<header>
+    <div *ngIf="routerLink.url === '/'">
+        <div class="listRouter negativeSpace" *ngIf="showNavigation">
+            <app-nav-router 
+                *ngFor="let router of routers; let numb = index"
+                word="{{router.name}}" [color]="show" [n]="numb+1"
+                (mouseover)="showOption(router.name)" (mouseout)="out()"
+                (click)="openLink(router.link)"
+            />
+            <span [ngClass]="{'color': show}">2023</span>
+        </div>
+    </div>
+        <app-show-router-selected [style.top.rem] ="topStyle" class="selected" 
+            [ngClass]="{'show': show}" [ngClass]="{'openFrame': open}"
+            selected="{{selected}}" [showAnimation]="animationText" 
+            (mouseout)="close()"
+        />
+</header>

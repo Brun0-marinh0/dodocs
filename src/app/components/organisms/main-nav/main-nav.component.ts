@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-nav',
@@ -9,20 +9,39 @@ import { Router } from '@angular/router';
 
 export class MainNavComponent {
 
-  constructor(private routerLink : Router) {}
+  constructor(public routerLink : Router) {
+    routerLink.events.subscribe((val) => {
+      this.restart(this.routerLink.url.toString())
+    })
+  }
 
   routers = [
     {name: 'Sobre', link: '/about'},
-    {name: 'Finalizados', link: '/about'},
+    {name: 'Finalizados', link: '/finilized'},
     {name: 'Criar', link: '/about'},
     {name: 'Andamento', link: '/about'},
   ]
+
+
 
   selected: String = ''
   show: Boolean = false
   animationText: Boolean = false
   open: Boolean = false
+  showNavigation: Boolean = true
   topStyle : number = 0.7
+
+  
+  restart(route: string){
+    if(route === '/'){
+      this.selected = ''
+      this.show  = false
+      this.animationText = false
+      this.open = false
+      this.showNavigation = true
+      this.topStyle = 0.7
+    }
+  }
 
   showOption(router: string) {
    this.selected = router
@@ -43,9 +62,11 @@ export class MainNavComponent {
   }
   openLink(link: string){
     this.open = true
+    this.showNavigation = false
     this.topStyle = 0
     setTimeout(() => {
       this.routerLink.navigate([link])
-    }, 500);
+      this.open = false
+    }, 2000);
   }
 }

@@ -9,6 +9,7 @@ import { ShowRouterSelectedComponent } from './components/molecules/show-router-
 import { HomeComponent } from './components/pages/home/home.component';
 import { HomeTemplateComponent } from './components/templates/home-template/home-template.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { FinilizedComponent } from './components/pages/finilized/finilized.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './components/pages/about/about.component';
     ShowRouterSelectedComponent,
     HomeComponent,
     HomeTemplateComponent,
-    AboutComponent
+    AboutComponent,
+    FinilizedComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<header>
+<header *ngIf="showHeader">
     <div *ngIf="routerLink.url === '/'">
         <div class="listRouter negativeSpace" *ngIf="showNavigation">
             <app-nav-router 

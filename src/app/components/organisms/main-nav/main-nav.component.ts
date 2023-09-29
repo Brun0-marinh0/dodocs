@@ -30,6 +30,7 @@ export class MainNavComponent {
   open: Boolean = false
   showNavigation: Boolean = true
   topStyle : number = 0.7
+  showHeader: Boolean = true
 
   
   restart(route: string){
@@ -40,6 +41,7 @@ export class MainNavComponent {
       this.open = false
       this.showNavigation = true
       this.topStyle = 0.7
+      this.showHeader = true
     }
   }
 
@@ -60,13 +62,16 @@ export class MainNavComponent {
       
     }
   }
-  openLink(link: string){
+  async openLink(link: string){
     this.open = true
     this.showNavigation = false
     this.topStyle = 0
-    setTimeout(() => {
+    await setTimeout(() => {
       this.routerLink.navigate([link])
       this.open = false
     }, 2000);
+    setTimeout(()=> {
+      this.showHeader = false
+    },2500)
   }
 }

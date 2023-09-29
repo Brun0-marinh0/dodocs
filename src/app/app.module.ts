@@ -10,6 +10,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { HomeTemplateComponent } from './components/templates/home-template/home-template.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { FinilizedComponent } from './components/pages/finilized/finilized.component';
+import { DocsTableComponent } from './components/organisms/docs-table/docs-table.component';
+import { FinilizedTemplateComponent } from './components/templates/finilized-template/finilized-template.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FinilizedComponent } from './components/pages/finilized/finilized.compo
     HomeComponent,
     HomeTemplateComponent,
     AboutComponent,
-    FinilizedComponent
+    FinilizedComponent,
+    DocsTableComponent,
+    FinilizedTemplateComponent
   ],
   imports: [
     BrowserModule,

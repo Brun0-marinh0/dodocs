@@ -1,5 +1,24 @@
-td, th{
-    border-bottom: 1px solid black;
-    padding: 0.5rem;
-    margin: 0;
+header{
+    
+    
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #ABA8A8;
+}
+header, div{
+    padding: 0 5vw;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr) min-content;
+    border-bottom: 1px solid #B9B9B9;
+}
+
+header{
+    padding-top: 1rem;
+    padding-bottom: .3rem;
+}
+
+div{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
 }

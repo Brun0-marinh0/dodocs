@@ -42,6 +42,8 @@ export class MainNavComponent {
       this.showNavigation = true
       this.topStyle = 0.7
       this.showHeader = true
+
+      return
     }
   }
 
